@@ -29,7 +29,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
 # Application definition
 
 INSTALLED_APPS = [
@@ -41,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'authentication',
     'rest_framework',
-    'corsheaders'
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -57,8 +58,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'flowbot.urls'
-CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_CREDENTIALS = True
 
 TEMPLATES = [
     {
