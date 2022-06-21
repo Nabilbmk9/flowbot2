@@ -6,4 +6,4 @@ class CreateUser(serializers.ModelSerializer):
 
     class Meta:
         model = CustomUser
-        fields = "__all__"
+        fields = ('email', 'password', 'nom', 'prenom')

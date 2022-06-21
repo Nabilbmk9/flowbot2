@@ -28,6 +28,8 @@ class CustomUser(AbstractBaseUser):
         max_length=255,
         blank=False
     )
+    prenom = models.CharField(max_length=30, blank=True)
+    nom = models.CharField(max_length=30, blank=True)
 
     is_active = models.BooleanField(default=True)
     is_staff = models.BooleanField(default=False)
